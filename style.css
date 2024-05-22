@@ -1,0 +1,638 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+* {
+    scroll-behavior: smooth;
+}
+.lanadelrey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.header-line {
+    display: flex;
+    background-color: rgba(13, 31, 193, .63);
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 15px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    /* margin: 15px; */
+    padding: 15px;
+    border-right: 1px solid black;
+}
+.phonenumber {
+    padding: 0px;
+}
+
+.phonenumber a {
+    border: 0;
+}
+
+.h1 {
+    color: white; 
+    font-size: 19px;
+    text-align: left; 
+    justify-content: left;
+    font-weight: normal;
+
+}
+
+
+.click {
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    background-color: #6990F3;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+h3 {
+   padding-top: 10px;
+   padding-bottom: 10px; 
+
+}
+h4 {
+ 
+    padding-top: 10px;
+    padding-bottom: 10px; 
+
+}
+
+.grey_background {
+    background-color: #DDDEE8;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+
+.date_and_city {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;padding: 20px 50px; 
+    background-color: #A6B1EA;
+    width: auto;
+    
+}
+
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+    z-index: 6;
+
+}
+
+.popup__bg.active {
+'active' opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+    opacity: 1;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 600px;
+    padding: 25px;
+    transition: 0.5s all;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup label {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.popup .label__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfd0d3;
+    margin-bottom: 5px;
+}
+
+.popup input {
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+}
+
+.popup input:focus {
+    border-bottom: 1px solid #5B7FDCFF;
+}
+
+.popup input:focus + .label__text {
+    color: #5B7FDCFF;
+}
+
+.popup textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.popup textarea:focus {
+    border-bottom: 1px solid #5B7FDCFF;
+}
+
+.popup textarea:focus + .label__text {
+    color: #5B7FDCFF;
+}
+
+.popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #5B7FDCFF;
+    background: #5B7FDCFF;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+    border-radius: 10px;
+}
+
+.popup button:hover {
+    background: #fff;
+    color: #6686d7;
+    transition: 0.5s all;
+}
+
+.radio_button{
+    display: flex;
+
+    align-items: start;
+    justify-content: center;
+    position: relative;
+}
+
+.radio_button label{
+
+    margin: 13px;
+}
+
+
+.intro_img{
+    height: 600px;
+
+}
+
+.purple_background {
+
+    background-color: #A6B1EA;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.about_price {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.price {
+    /* display: flex; */
+  margin: 10px 50px;
+  max-width: 170px;
+   
+}
+
+.nuzhnyapanel{
+    display: flex;
+    border: 1px solid;
+    background-color: rgba(13, 31, 193, .63);
+    justify-content: space-between;
+    margin: 15px;
+    padding: 15px;
+    min-height: 50px;
+}
+
+.textaboutlana {
+    position: absolute;
+    top: 75%; 
+    left: 42%; 
+    transform: translate(-75%, -50%); 
+    color: white; 
+    font-size: 16px; 
+    text-align: left; 
+    padding: 10px; 
+    justify-content: left;
+}
+
+.photoendtext1 {
+    display: flex; 
+    align-items: center;
+}
+.textendphoto1 {
+    display: inline-block; 
+    margin-left: 30px; 
+    width: 300px;
+    
+}
+
+.phttxt1 {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.txtpht {
+    display: inline-block; 
+    margin-right: 30px; 
+    width: 300px;
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro {
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 40%;
+    padding: 25px;
+}
+
+.intro_wrapper {
+
+    height: 80%;
+    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+}
+
+.lanapht {
+   margin: 20px 0px;
+   display: flex;
+    align-items: center;
+}
+
+.clck {
+    color: white; 
+    font-size: 15px; 
+    text-align: center;
+    justify-content: left;  
+    background-color: #90A3D6;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    width: 200px;
+    
+}
+
+.about_price {
+padding-bottom: 20px;
+    margin: 5px ;
+}
+.imgs {
+    margin-left: 30px;
+}
+
+.logo{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.price {
+    margin-left: 60px;
+    padding: 30px;
+    border-radius: 25px;
+    border: 2px solid #c5cef8 ;
+}
+
+.price:hover{
+    background-color: #c5cef8;
+}
+
+header {
+    position: relative;
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.news_img{
+    height: 300px;
+    margin: 40px;
+}
+
+.networks{
+    text-align: center;
+}
+/*burger*/
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    z-index: 6;
+
+}
+
+.menu-btn span {
+    width: 35px;
+    height: 3px;
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #6990F3;
+    transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+
+.menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+}
+
+.menu-btn.active {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+}
+
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+    background-color: #14141D;
+}
+
+.menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+    background-color: #14141D;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 20% 10% 10%;
+    background: #3498db;
+    transform: translateX(200%);
+    transition: transform 0.5s;
+    text-transform: uppercase;
+
+    font-weight: 200;
+    font-size: 35px;
+    z-index: 5;
+}
+
+.menu-link {
+    color: #14141D;
+
+}
+
+.menu-list {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    text-align: right;
+}
+/*/burger*/
+
+/*адаптив*/
+
+@media screen and (max-width: 1130px) {
+    .about_price{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .price{
+        width: 50%;
+        max-width: 200px;
+    }
+
+
+}
+
+@media screen and (max-width: 937px){
+
+    .intro_text {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        width: 50px;
+        height: 39px;
+        position: relative;
+        z-index: 6;
+        overflow: hidden;
+        cursor: pointer;
+
+    }
+
+    .menu-btn span {
+        width: 60px;
+        height: 4px;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        transition: all 0.5s;
+    }
+
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+
+    .menu.active {
+        transform: translateX(0);
+    }
+
+    .menu li {
+        list-style-type: none;
+    }
+
+    .about_price{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .price{
+        width: 50%;
+        max-width: 200px;
+    }
+
+    .popup{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .news_img{
+        height: 250px;
+    }
+
+    .txtpht {
+        display: inline-block;
+        margin-right: 30px;
+        width: 250px;
+    }
+
+    .txtpht h3 {
+       font-size: 15px;
+        padding-left: 10px;
+        text-align: center;
+
+    }
+    .txtpht p {
+        font-size: 12px;
+        padding-left: 10px;
+        text-align: center;
+
+    }
+
+    .textendphoto1 h3 {
+        font-size: 15px;
+        text-align: center;
+        padding-right: 10px;
+    }
+    .textendphoto1 p {
+        font-size: 12px;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+
+    .concerts_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .date_and_city {
+     
+        width: 100%;
+    }
+
+    .price{
+        font-size: 15px;
+
+        max-width: 120px;
+
+    }
+
+    .imgs {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 541px) {
+
+    .photoendtext1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .lanapht{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .price {
+        font-size: 15px;
+        max-width: 200px;
+    }
+    .about_price{
+        justify-content: center;
+    }
+    .nuzhnyapanel{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo{
+        width: 320px;
+    }
+}
+
+
+
+

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Lana Del Rey</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Все про Лану Дель Рей">
+</head>
+
+<body>
+<script src="script.js" defer></script>
+<script src="popup.js" defer></script>
+
+    <header>
+        <div class="header-line">
+
+        <img  src="img/LDR%20(1).png" alt="logo">
+        <nav class="header_nav">
+            <a href="#lastnews" >Новини</a>
+            <a href="#concerts" >Концерти</a>
+            <a href="#price1" >Ціни на квитки</a>
+            <span class="phonenumber">
+            <a href="" ><img src="img/phone%20(1).png" height="10" alt="phone"></a>
+            <a href="" >+380630473730</a>
+            </span>
+        </nav>
+<!--            burger-menu-->
+<div id="btn_wrapper" class="btn_wrapper">
+    <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="menu">
+        <nav>
+            <ul class="menu-list">
+                <li><a class="menu-link" href="#lastnews">Новини</a></li>
+                <li><a class="menu-link" href="#concerts">Концерти</a></li>
+                <li><a class="menu-link" href="#price1">Ціни на квитки </a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!--            burger-menu-->
+</div>
+
+<div class="mainpage">
+<div class="lanadelrey">
+    <div class="video">
+        <video  poster="./img/bg.png" id="player" width="100%" height="auto" autoplay muted loop>
+            <source src="./img/bg%20(1).mp4" type="video/mp4" >
+        </video>
+    </div>
+    <div class="intro_wrapper">
+        <div class="intro">
+            <div class="h1">Тут ви можете дізнатись все про життя Лани Дель Рей</div>
+
+            <div><button class="click open-popup ">Оформити підписку</button></div>
+        </div>
+    </div>
+    <div id="popup__bg"  class="popup__bg">
+        <form class="popup">
+            <img src="img/close.png" class="close-popup">
+            <label>
+                <input type="text" name="name">
+                <div class="label__text">
+                    Ім'я
+                </div>
+            </label>
+            <label>
+                <input type="email" name="email">
+                <div class="label__text">
+                    Пошта
+                </div>
+            </label>
+            <label>
+
+                <div class="radio_button">
+                    <input type="radio" id="weekend" name="select" value="weekend" checked />
+                    <label for="weekend">Тиждень</label>
+                </div>
+
+                <div class="radio_button">
+                    <input type="radio" id="month" name="select" value="month" />
+                    <label for="month">Місяць</label>
+                </div>
+
+                <div class="radio_button">
+                    <input type="radio" id="your" name="select" value="your" />
+                    <label for="your">Рік</label>
+                </div>
+
+                <div class="label__text">
+                    Тривалість підписки
+                </div>
+            </label>
+            <button type="submit">Оформити</button>
+        </form>
+    </div>
+
+</div>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="lastnews"> Останні новини</h2>
+            <div class="photoendtext1">
+                <img class="news_img" src="img/lana%20photo2%20(1).png" alt="lana photo 2">
+                   <div class="textendphoto1">
+                        <h3>Кантрі від Лани Дель Рей: у вересні
+                            співачка випустить новий альбом</h3>
+                            <p>Співачка Лана Дель Рей випустить новий
+                                альбом — він матиме назву Lasso і побачить
+                            світ у вересні 2024 року.
+                            Про це 1 лютого повідомили у Billboard.
+                            Також співачка планує поїхати у великий
+                            тур Європою, щоб усі  фанати змогли
+                            насолодитись її співом вживу.</p>
+                    </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="phttxt1">
+                <div class="lanapht">
+
+                    <div class="txtpht">
+                        <h3>Давно не бачили: співачка
+                    Лана Дель Рей у чорній
+                    пом'ятій сукні відвідала
+                    зіркову вечірку</h3>
+                         <p>Її сукня була лаконічною та елегантною,але т
+                        канина трохи підвела.
+                        38-річна співачка Лана Дель Рей 
+                        дуже рідко буває на світських заходах,
+                        проте галаконцерт Pre-Grammy Gala
+                        вирішила не пропускати.</p>
+                    </div>
+                    <img src="img/lana%20photo%203%20(1).png" class="news_img" alt="lana photo 3"></div>
+                </div>
+        </section>
+
+        <section>
+            <div class="grey_background">
+                <h2 id="concerts">Майбутні концерти</h2>
+                <div class="concerts_wrapper">
+                    <div class="date_and_city">
+                        <p>12 - 14 квітня 2024</p>
+                        <p>Empire Polo Field, Indio, California, США</p>
+                    </div>
+
+                    <div class="date_and_city">
+                        <p>19 - 20 квітня 2024</p>
+                        <p>Gulf Shores, Gulf Shores, AL, США</p>
+                    </div>
+
+                    <div class="date_and_city">
+                        <p>30 - 31 травня 2024</p>
+                        <p>Parc del Forum, Barcelona, Catalunya, Іспанія</p>
+                    </div>
+
+                    <div class="date_and_city">
+                        <p>4 червня 2024</p>
+                        <p>Ippodromo Snai La Maura, Milan, Lombardia, Італія</p>
+                    </div>
+
+                    <div class="date_and_city">
+                        <p>6 - 8 червня 2024</p>
+                        <p>Parque da Cidade do Porto, Porto, Португалія</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="purple_background">
+                <h2 id="price1">Середні ціни на квитки</h2>
+
+                <div class="about_price">
+                    <div class="price">
+                        <h3>США</h3>
+                        <h4>500 - 1500 $</h4>
+                        <ul>
+                            <li>
+                                500-700$ - місце
+                                далеко від сцени;
+                            </li>
+                            <li>
+                                800-1000$ місце
+                                ближче до сцени +
+                                кемпінг або
+                                паркомісце;
+                            </li>
+                            <li>
+                                1100-1500$ -
+                                фанзона, можливість
+                                зробити
+                                фото з Ланою, готель
+                                на 1 ніч.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price">
+                        <h3>Барселона</h3>
+                        <h4>250 - 600 $</h4>
+                        <ul>
+                            <li>
+                                250-350$ - місце
+                                далеко від сцени;
+                            </li>
+                            <li>
+                                450-500$ - місце
+                                в центрі залу;
+                            </li>
+                            <li>
+                                550-600$ -
+                                фанзона + кемпінг
+                                або паркомісце.
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="price">
+                        <h3>Мілан</h3>
+                        <h4>150 - 450 $</h4>
+                        <ul>
+                            <li>
+                                150-200$ - місце
+                                на балконі;
+                            </li>
+                            <li>
+                                250-300$ - місце
+                                в центрі залу;
+                            </li>
+                            <li>
+                                350-450$ -
+                                фанзона + кемпінг
+                                або паркомісце.
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="price">
+                        <h3>Порту</h3>
+                        <h4>450 - 700 $</h4>
+                        <ul>
+                            <li>
+                                450-550$ - місце
+                                в задніх рядах;
+                            </li>
+                            <li>
+                                600-650$ - місце
+                                в центрі залу;
+                            </li>
+                            <li>
+                                650-700$ -
+                                фанзона+ готель
+                                на 1 ніч.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="nuzhnyapanel">
+            <div>
+                <a href="https://lana-del-rey.fandom.com/wiki/Complete_Song_List" target="_blank">
+                    <button class="clck">Слухати всі пісні Лани Дель Рей</button></a>
+            </div>
+            <div class="logo">
+                <img src="img/LDR%20(1).png" height="" alt="logo">
+            </div>
+            <div class="networks">
+
+                <p>Ми у соцмережах</p>
+                <span class="imgs">
+                <img src="img/image%202%20(1)(1).png" height="20" alt="instagram">
+                <img src="img/image%203%20(1)(1).png" height="20" alt="telegram">
+                <img src="img/image%204%20(1)(1).png" height="20" alt=""> </span>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
